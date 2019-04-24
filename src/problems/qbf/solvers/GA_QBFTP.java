@@ -209,7 +209,19 @@ public class GA_QBFTP extends AbstractGA<Integer, Integer> {
 	@Override
 	protected void mutateGene(Chromosome chromosome, Integer locus) {
 		chromosome.set(locus, 1 - chromosome.get(locus));
-		fix(chromosome);
+	}
+	
+	@Override
+	protected Population mutate(Population offsprings) {
+		for (Chromosome c : offsprings) {
+			for (int locus = 0; locus < chromosomeSize; locus++) {
+				if (rng.nextDouble() < mutationRate) {
+					mutateGene(c, locus);
+				}
+			}
+			fix(c);			
+		}
+		return offsprings;
 	}
 	
 	@Override
@@ -256,10 +268,10 @@ public class GA_QBFTP extends AbstractGA<Integer, Integer> {
 	public static void main(String[] args) throws IOException {
 
 		long startTime = System.currentTimeMillis();
-		GA_QBFTP ga = new GA_QBFTP(1000, 100, 1.0 / 40.0, "instances/qbf040");
+		GA_QBFTP ga = new GA_QBFTP(1000, 1000, 1.0 / 200.0, "../instances/qbf" + args[0]);
 		Solution<Integer> bestSol = ga.solve();
 		System.out.println("maxVal = " + bestSol);
-		long endTime = System.currentTimeMillis();
+		long endTime = System.currentTimeMillis();	
 		long totalTime = endTime - startTime;
 		System.out.println("Time = " + (double) totalTime / (double) 1000 + " seg");
 

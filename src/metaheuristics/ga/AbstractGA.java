@@ -30,7 +30,7 @@ public abstract class AbstractGA<G extends Number, F> {
 	 * flag that indicates whether the code should print more information on
 	 * screen
 	 */
-	public static boolean verbose = true;
+	public static boolean verbose = false;
 
 	/**
 	 * a random number generator
@@ -163,6 +163,8 @@ public abstract class AbstractGA<G extends Number, F> {
 		bestSol = decode(bestChromosome);
 		System.out.println("(Gen. " + 0 + ") BestSol = " + bestSol);
 
+		long startTime = System.currentTimeMillis();
+		long maxTime = 30 * 60 * 1000;
 		/*
 		 * enters the main loop and repeats until a given number of generations
 		 */
@@ -185,6 +187,9 @@ public abstract class AbstractGA<G extends Number, F> {
 				if (verbose)
 					System.out.println("(Gen. " + g + ") BestSol = " + bestSol);
 			}
+			
+			long currentTime = System.currentTimeMillis();	
+			if ((currentTime - startTime) > maxTime) break;
 
 		}
 
