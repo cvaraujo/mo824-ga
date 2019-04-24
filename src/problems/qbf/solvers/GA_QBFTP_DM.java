@@ -274,8 +274,8 @@ public class GA_QBFTP_DM extends AbstractGA<Integer, Integer> {
 				crosspoint1 = cross_start + rng.nextInt(cross_end - cross_start + 1);
 				crosspoint2 = crosspoint1 + rng.nextInt(cross_end - crosspoint1 + 1);
 			}
-			System.out.println("cross1 = " + crosspoint1);
-			System.out.println("cross2 = " + crosspoint2);
+//			System.out.println("cross1 = " + crosspoint1);
+//			System.out.println("cross2 = " + crosspoint2);
 			
 			Chromosome offspring1 = new Chromosome();
 			Chromosome offspring2 = new Chromosome();
@@ -306,7 +306,7 @@ public class GA_QBFTP_DM extends AbstractGA<Integer, Integer> {
 	public static void main(String[] args) throws IOException {
 
 		long startTime = System.currentTimeMillis();
-		GA_QBFTP ga = new GA_QBFTP(1000, 1000, 1.0 / 200.0, "../instances/qbf" + args[0]);
+		GA_QBFTP_DM ga = new GA_QBFTP_DM(1000, 1000, 1.0 / 200.0, "../instances/qbf" + args[0]);
 		Solution<Integer> bestSol = ga.solve();
 		System.out.println("maxVal = " + bestSol);
 		long endTime = System.currentTimeMillis();	
