@@ -289,6 +289,9 @@ public class GA_QBFTP_DM extends AbstractGA<Integer, Integer> {
 					offspring2.add(parent2.get(j));
 				}
 			}
+			
+			fix(offspring1);
+			fix(offspring2);
 
 			offsprings.add(offspring1);
 			offsprings.add(offspring2);
@@ -306,7 +309,7 @@ public class GA_QBFTP_DM extends AbstractGA<Integer, Integer> {
 	public static void main(String[] args) throws IOException {
 
 		long startTime = System.currentTimeMillis();
-		GA_QBFTP_DM ga = new GA_QBFTP_DM(1000, 1000, 1.0 / 200.0, "../instances/qbf" + args[0]);
+		GA_QBFTP_DM ga = new GA_QBFTP_DM(1000, 1000, 1.0 / 100.0, "../instances/qbf" + args[0]);
 		Solution<Integer> bestSol = ga.solve();
 		System.out.println("maxVal = " + bestSol);
 		long endTime = System.currentTimeMillis();	

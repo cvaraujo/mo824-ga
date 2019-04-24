@@ -7,3 +7,7 @@
 3:
 	population = 200
 	mutation rate = 1/100
+4:
+	population = 200
+	mutation rate = 1/100
+	EVOL1: Diversity Maintenance
