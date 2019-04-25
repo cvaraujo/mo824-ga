@@ -1,7 +1,7 @@
-(Gen. 0) BestSol = Solution: cost=[98.0], size=[10], elements=[0, 1, 2, 4, 8, 9, 11, 14, 16, 18]
-(Gen. 1) BestSol = Solution: cost=[102.0], size=[9], elements=[1, 2, 4, 9, 11, 14, 15, 16, 19]
-(Gen. 2) BestSol = Solution: cost=[106.0], size=[8], elements=[2, 4, 9, 11, 14, 15, 16, 19]
-(Gen. 4) BestSol = Solution: cost=[113.0], size=[10], elements=[2, 3, 4, 7, 9, 11, 14, 15, 16, 19]
-(Gen. 5) BestSol = Solution: cost=[120.0], size=[10], elements=[0, 1, 2, 4, 8, 9, 12, 14, 16, 18]
-maxVal = Solution: cost=[120.0], size=[10], elements=[0, 1, 2, 4, 8, 9, 12, 14, 16, 18]
-Time = 8.316 seg
+(Gen. 0) BestSol = Solution: cost=[102.0], size=[9], elements=[4, 7, 9, 11, 13, 14, 15, 16, 17]
+(Gen. 2) BestSol = Solution: cost=[107.0], size=[9], elements=[2, 3, 4, 6, 9, 11, 14, 15, 16]
+(Gen. 5) BestSol = Solution: cost=[109.0], size=[10], elements=[2, 3, 4, 9, 11, 14, 15, 16, 17, 19]
+(Gen. 6) BestSol = Solution: cost=[120.0], size=[8], elements=[2, 3, 4, 6, 11, 14, 15, 16]
+(Gen. 12) BestSol = Solution: cost=[125.0], size=[9], elements=[2, 3, 4, 9, 11, 14, 15, 16, 19]
+maxVal = Solution: cost=[125.0], size=[9], elements=[2, 3, 4, 9, 11, 14, 15, 16, 19]
+Time = 7.092 seg

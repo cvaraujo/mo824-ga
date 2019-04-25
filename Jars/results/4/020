@@ -5,4 +5,4 @@
 (Gen. 5) BestSol = Solution: cost=[120.0], size=[8], elements=[2, 3, 4, 6, 11, 14, 15, 16]
 (Gen. 8) BestSol = Solution: cost=[125.0], size=[9], elements=[2, 3, 4, 9, 11, 14, 15, 16, 19]
 maxVal = Solution: cost=[125.0], size=[9], elements=[2, 3, 4, 9, 11, 14, 15, 16, 19]
-Time = 8.333 seg
+Time = 7.635 seg
