@@ -1,0 +1,5 @@
+(Gen. 0) BestSol = Solution: cost=[167.0], size=[13], elements=[4, 6, 9, 10, 12, 15, 20, 22, 24, 27, 29, 33, 36]
+(Gen. 1) BestSol = Solution: cost=[180.0], size=[17], elements=[1, 2, 3, 4, 9, 10, 11, 14, 15, 17, 19, 23, 25, 26, 32, 34, 36]
+(Gen. 2) BestSol = Solution: cost=[215.0], size=[16], elements=[0, 2, 7, 9, 10, 11, 12, 15, 19, 21, 24, 26, 29, 31, 33, 34]
+(Gen. 5) BestSol = Solution: cost=[232.0], size=[17], elements=[1, 2, 4, 7, 8, 9, 14, 15, 19, 21, 24, 29, 31, 32, 34, 35, 36]
+(Gen. 6) BestSol = Solution: cost=[260.0], size=[18], elements=[0, 2, 7, 9, 10, 11, 15, 19, 21, 24, 26, 29, 31, 32, 33, 34, 35, 36]
