@@ -8,6 +8,10 @@
 	population = 200
 	mutation rate = 1/100
 4:
-	population = 200
+	population = 1000
 	mutation rate = 1/100
 	EVOL1: Diversity Maintenance
+5:
+	population = 1000
+	mutation rate = 1/100
+	EVOL2: Latin Hypercube
